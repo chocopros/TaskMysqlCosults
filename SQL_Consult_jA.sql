@@ -1,3 +1,4 @@
+--Create Table
 CREATE TABLE "tasks" (
   "id" uuid PRIMARY KEY,
   "title" varchar(10) UNIQUE NOT NULL,
@@ -7,6 +8,7 @@ CREATE TABLE "tasks" (
   "end_tasks" timestamp
 );
 
+--Insert Values
 insert into tasks 
 (	id,
  	title,
@@ -36,6 +38,8 @@ insert into tasks
  	'2022/09/09',
 	'2022/09/22'
 );
+
+--Consultas
 
 select * from tasks;
 
